@@ -10,7 +10,13 @@ $array1 = array(
     array("Vuelo" => "Iberia-WH44", "Destino" => "Roma"),
     array("Vuelo" => "Ryanair-EL00", "Destino" => "Madrid"),
     array("Vuelo" => "Vueling-AE12", "Destino" => "Roma"),
-    array("Vuelo" => "Volotea-EA21", "Destino" => "Roma")
+    array("Vuelo" => "Volotea-EA21", "Destino" => "Roma"),
+    array("Vuelo" => "Iberia-WE44", "Destino" => "New York"),
+    array("Vuelo" => "Ryanair-EW44", "Destino" => "Tokio"),
+    array("Vuelo" => "Vueling-ZK87", "Destino" => "Chicago"),
+    array("Vuelo" => "Volotea-UA21", "Destino" => "Paris"),
+    array("Vuelo" => "Iberia-WH44", "Destino" => "Oporto"),
+    array("Vuelo" => "Ryanair-EL00", "Destino" => "Los Ángeles")
 );
 
 $array2  = array(
@@ -83,6 +89,60 @@ $array5 = array(
     array("Vuelo" => "Vueling-AE12", "Combustible" => 399),
     array("Vuelo" => "Volotea-EA21", "Combustible" => 404)
 );
+
+$array6 = array(
+    array("Vuelo" => "", "Combustible" => ),
+    array("Vuelo" => "", "Combustible" => ),
+    array("Vuelo" => "", "Combustible" => ),
+    array("Vuelo" => "", "Combustible" => ),
+    array("Vuelo" => "", "Combustible" => ),
+    array("Vuelo" => "", "Combustible" => ),
+    array("Vuelo" => "", "Combustible" => ),
+    array("Vuelo" => "", "Combustible" => ),
+    array("Vuelo" => "", "Combustible" => ),
+    array("Vuelo" => "", "Combustible" => )
+);
+
+$array7 = array(
+    array("Vuelo" => "", "Combustible" => ),
+    array("Vuelo" => "", "Combustible" => ),
+    array("Vuelo" => "", "Combustible" => ),
+    array("Vuelo" => "", "Combustible" => ),
+    array("Vuelo" => "", "Combustible" => ),
+    array("Vuelo" => "", "Combustible" => ),
+    array("Vuelo" => "", "Combustible" => ),
+    array("Vuelo" => "", "Combustible" => ),
+    array("Vuelo" => "", "Combustible" => ),
+    array("Vuelo" => "", "Combustible" => )
+);
+
+$array8 = array(
+    array("Vuelo" => "", "Combustible" => ),
+    array("Vuelo" => "", "Combustible" => ),
+    array("Vuelo" => "", "Combustible" => ),
+    array("Vuelo" => "", "Combustible" => ),
+    array("Vuelo" => "", "Combustible" => ),
+    array("Vuelo" => "", "Combustible" => ),
+    array("Vuelo" => "", "Combustible" => ),
+    array("Vuelo" => "", "Combustible" => ),
+    array("Vuelo" => "", "Combustible" => ),
+    array("Vuelo" => "", "Combustible" => )
+);
+
+$array9 = array(
+    array("Vuelo" => "", "Combustible" => ),
+    array("Vuelo" => "", "Combustible" => ),
+    array("Vuelo" => "", "Combustible" => ),
+    array("Vuelo" => "", "Combustible" => ),
+    array("Vuelo" => "", "Combustible" => ),
+    array("Vuelo" => "", "Combustible" => ),
+    array("Vuelo" => "", "Combustible" => ),
+    array("Vuelo" => "", "Combustible" => ),
+    array("Vuelo" => "", "Combustible" => ),
+    array("Vuelo" => "", "Combustible" => )
+);
+
+
 
 
 
