@@ -91,55 +91,55 @@ $array5 = array(
 );
 
 $array6 = array(
-    array("Vuelo" => "", "Combustible" => ),
-    array("Vuelo" => "", "Combustible" => ),
-    array("Vuelo" => "", "Combustible" => ),
-    array("Vuelo" => "", "Combustible" => ),
-    array("Vuelo" => "", "Combustible" => ),
-    array("Vuelo" => "", "Combustible" => ),
-    array("Vuelo" => "", "Combustible" => ),
-    array("Vuelo" => "", "Combustible" => ),
-    array("Vuelo" => "", "Combustible" => ),
-    array("Vuelo" => "", "Combustible" => )
+    array("Vuelo" => "Vueling-AE12", "Horas_despegue" => "15/03/2022 12:00:00"),
+    array("Vuelo" => "Volotea-EA21", "Horas_despegue" => "16/02/2022 16:30:20"),
+    array("Vuelo" => "Iberia-WE44", "Horas_despegue" => "16/02/2022 15:45:00"),
+    array("Vuelo" => "Ryanair-EW44", "Horas_despegue" => "17/02/2022 18:11:40"),
+    array("Vuelo" => "Vueling-ZK87", "Horas_despegue" => "17/02/2022 12:50:00"),
+    array("Vuelo" => "Volotea-UA21", "Horas_despegue" => "18/02/2022 10:45:30"),
+    array("Vuelo" => "Iberia-WH44", "Horas_despegue" => "19/02/2022 11:20:00"),
+    array("Vuelo" => "Ryanair-EL00", "Horas_despegue" => "20/02/2022 13:57:00")
 );
 
 $array7 = array(
-    array("Vuelo" => "", "Combustible" => ),
-    array("Vuelo" => "", "Combustible" => ),
-    array("Vuelo" => "", "Combustible" => ),
-    array("Vuelo" => "", "Combustible" => ),
-    array("Vuelo" => "", "Combustible" => ),
-    array("Vuelo" => "", "Combustible" => ),
-    array("Vuelo" => "", "Combustible" => ),
-    array("Vuelo" => "", "Combustible" => ),
-    array("Vuelo" => "", "Combustible" => ),
-    array("Vuelo" => "", "Combustible" => )
+    array("Divisa" => "Yen", "C_Divisa" => 0,007576),
+    array("Divisa" => "USD", "C_Divisa" => 0,877732),
+    array("Divisa" => "Sol Peruano", "C_Divisa" => 0,24),
+    array("Divisa" => "Lira Turca", "C_Divisa" => 0,065)
 );
 
 $array8 = array(
-    array("Vuelo" => "", "Combustible" => ),
-    array("Vuelo" => "", "Combustible" => ),
-    array("Vuelo" => "", "Combustible" => ),
-    array("Vuelo" => "", "Combustible" => ),
-    array("Vuelo" => "", "Combustible" => ),
-    array("Vuelo" => "", "Combustible" => ),
-    array("Vuelo" => "", "Combustible" => ),
-    array("Vuelo" => "", "Combustible" => ),
-    array("Vuelo" => "", "Combustible" => ),
-    array("Vuelo" => "", "Combustible" => )
+    array("Ciudad" => "Milán", "Aeropuerto" => "Aeropuerto Milán-Malpensa"),
+    array("Ciudad" => "Roma", "Aeropuerto" => "Aeropuerto Roma-Fiumicino"),
+    array("Ciudad" => "Estambul", "Aeropuerto" => "Aeropuerto de Estambul"),
+    array("Ciudad" => "Madrid", "Aeropuerto" => "Aeropuerto Adolfo Suárez Madrid-Barajas"),
+    array("Ciudad" => "Lima", "Aeropuerto" => "Aeropuerto Internacional Jorge Chávez"),
+    array("Ciudad" => "Bilbao", "Aeropuerto" => "Aeropuerto Internacional Bilbao"),
+    array("Ciudad" => "New York ", "Aeropuerto" => "Aeropuerto Internacional John F. Kennedy"),
+    array("Ciudad" => "Tokio", "Aeropuerto" => "Aeropuerto Internacional de Haneda"),
+    array("Ciudad" => "Chicago", "Aeropuerto" => "Aeropuerto Internacional O'Hare"),
+    array("Ciudad" => "Paris", "Aeropuerto" => "Aeropuerto Internacional de Paris-Charles de Gaulle"),
+    array("Ciudad" => "Oporto", "Aeropuerto" => "Aeropuerto Francisco Sá Carneiro"),
+    array("Ciudad" => "Los Ángeles", "Aeropuerto" => "Aeropuerto Internacional de Los Ángeles")
 );
 
 $array9 = array(
-    array("Vuelo" => "", "Combustible" => ),
-    array("Vuelo" => "", "Combustible" => ),
-    array("Vuelo" => "", "Combustible" => ),
-    array("Vuelo" => "", "Combustible" => ),
-    array("Vuelo" => "", "Combustible" => ),
-    array("Vuelo" => "", "Combustible" => ),
-    array("Vuelo" => "", "Combustible" => ),
-    array("Vuelo" => "", "Combustible" => ),
-    array("Vuelo" => "", "Combustible" => ),
-    array("Vuelo" => "", "Combustible" => )
+    array("Vuelo" => "Vueling-AE12", "Precio" => 120, "Destino" => "Milán"),
+    array("Vuelo" => "Volotea-EA21", "Precio" => 90, "Destino" => "Roma"),
+    array("Vuelo" => "Iberia-WE44", "Precio" => 200, "Destino" => "Estambul"),
+    array("Vuelo" => "Ryanair-EW44", "Precio" => 50, "Destino" => "Madrid"),
+    array("Vuelo" => "Vueling-ZK87", "Precio" => 1000, "Destino" => "Lima"),
+    array("Vuelo" => "Volotea-UA21", "Precio" => 70, "Destino" => "Bilbao"),
+    array("Vuelo" => "Iberia-WH44 ", "Precio" => 95, "Destino" => "Roma"),
+    array("Vuelo" => "Ryanair-EL00", "Precio" => 80, "Destino" => "Madrid"),
+    array("Vuelo" => "Vueling-AE12", "Precio" => 65, "Destino" => "Roma"),
+    array("Vuelo" => "Volotea-EA21", "Precio" => 77, "Destino" => "Roma"),
+    array("Vuelo" => "Iberia-WE44", "Precio" => 1200, "Destino" => "New York"),
+    array("Vuelo" => "Ryanair-EW44", "Precio" => 1100, "Destino" => "Tokio"),
+    array("Vuelo" => "Vueling-ZK87", "Precio" => 1500, "Destino" => "Chicago"),
+    array("Vuelo" => "Volotea-UA21 ", "Precio" => 200, "Destino" => "Paris"),
+    array("Vuelo" => "Iberia-WH44 ", "Precio" => 45, "Destino" => "Oporto"),
+    array("Vuelo" => "Ryanair-EL00 ", "Precio" => 1700, "Destino" => "Los Ángeles")
 );
 
 
