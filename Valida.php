@@ -21,6 +21,16 @@ if (filter_var($Email, FILTER_VALIDATE_EMAIL)) {
 }
 
 
+
+
+
+
+
+
+
+
+
+
 $fichero = fopen("Ticket.txt","w+");
 
 if ($fichero == false) {
@@ -44,8 +54,6 @@ if ($fichero == false) {
     fflush($fichero);
 }
 
-$peso_archivo = filesize("Ticket.txt");
-echo fread($fichero, $peso_archivo);
+echo readfile("Ticket.txt");
 fclose($fichero);
-
 ?>
