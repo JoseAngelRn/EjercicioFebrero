@@ -1,0 +1,7 @@
+Nombre: hola
+Apellidos: tela
+DNI: 78945612
+Email: 45325@gmail.com
+Código: the
+Importe: astgr
+Maleta: 
