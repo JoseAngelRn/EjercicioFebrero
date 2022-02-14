@@ -8,11 +8,34 @@
     <link rel="stylesheet" type="text/css" href="Hoja_Estilo.css">
 </head>
 <body>
-    <form method= "POST" target= "_blank" action="Mostrar_vuelo.php">
-        <fieldset>
-        <h1>Reserva de vuelo</h1>
-        </fieldset>
-        <h3>Elija aquí su vuelo</h3>
+    <fieldset>
+    <h1>Reserva de vuelo</h1>
+    </fieldset>
+    <form method= "POST" target= "_blank" action="">
+        <h3>Formulario</h3>
+
+            <label><strong>Nombre</strong></label></br>
+            <input  name="Nombre" type="text"></br>
+    
+            <label><strong>Apellidos</strong></label></br>
+            <input name="Apellidos" type="text"></br>
+    
+            <label><strong>DNI</strong></label></br>
+            <input name="DNI" type="text" size="9"></br>
+
+            <label><strong>Email</strong></label></br>
+            <input name="Email" type="text"></br>
+
+            <label><strong>Código descuento</strong></label></br>
+            <input name="Codigo" type="text"></br>
+    
+            <label><strong>Importe</strong></label></br>
+            <input name="Importe" type="text"></br>
+
+            <label><strong>Maleta</strong></label></br>
+            <input name="Activo" type="checkbox"></br>
+            
+    <h3>Elija aquí su vuelo</h3>
     <select name="Mostrar_Vuelos">
         <option value="" selected  disabled>---Selecciona un vuelo---</option>
         <option value="Vueling-AE12">Vueling-AE12</option>
