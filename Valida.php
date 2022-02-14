@@ -20,12 +20,7 @@ if (filter_var($Email, FILTER_VALIDATE_EMAIL)) {
     echo "El correo NO es valido"."</br>";
 }
 
-
-
-
-
-
-
+Divisas($array9);
 
 
 

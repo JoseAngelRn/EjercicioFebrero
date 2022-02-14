@@ -458,9 +458,57 @@ function Ciudad_mas_3($array1){
 } 
 }
 
-#-------------------------------------------------------------------------------
+#CONVERSOR DE DIVISAS-------------------------------------------------------------------------------
+function Divisas($array9){
 
+    foreach ($array9 as $array_9) {
+        $Destino = $array_9["Destino"];
+        $Precio = $array_9["Precio"];
 
+    if ($Destino == "Milán") {
+        echo "El precio es:" .$precio."<br>";
+        }
+    elseif($Destino == "Roma"){
+        echo "El precio es:" .$Precio."<br>";
+        }
+    elseif($Destino == "Estambul"){
+        $res = $precio * 0,065;
+        echo "El precio es:" .$res."<br>" ;
+        }
+    elseif($Destino == "Madrid"){
+        echo "El precio es:" .$precio."<br>";
+        }
+    elseif($Destino == "Lima"){
+        $res = $precio * 0.24;
+        echo "El precio es:" .$res."<br>";
+        }
+    elseif($Destino == "Bilbao"){
+        echo "El precio es:" .$precio."<br>";
+        }
+    elseif($Destino == "New York"){
+        $res = $precio * 0,877732;
+        echo "El precio es:" .$res."<br>";
+        }
+    elseif($Destino == "Tokio"){
+        $res = $precio * 0,007576;
+        echo "El precio es:" .$res."<br>";
+        }
+    elseif($Destino == "Chicago"){
+        $res = $precio * 0,877732;
+        echo "El precio es:" .$res."<br>";
+        }
+    elseif($Destino == "Paris"){
+        echo "El precio es:" .$Destino."<br>";
+        }
+    elseif($Destino == "Oporto"){
+        echo "El precio es:" .$Destino."<br>";
+        }
+    elseif($Destino == "Los Ángeles"){
+        $res = $precio * 0,877732;
+        echo "El precio es:" .$res."<br>";
+        }
+    }
+}
 
 
 
