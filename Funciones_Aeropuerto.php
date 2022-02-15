@@ -462,6 +462,7 @@ function Ciudad_mas_3($array1){
 function Divisas($array9, $text){
 
     foreach ($array9 as $array_9){
+<<<<<<< HEAD
         $Precio = $array_9["Precio"];
 
     if ($text == "Vueling-AE12"){
@@ -488,6 +489,38 @@ function Divisas($array9, $text){
         }
     elseif($text == "Ryanair-EL00"){
         $res = $Precio * 0.007576;
+=======
+        $Destino = $array_9["Destino"];
+        $Precio = $array_9["Precio"];
+
+    if ($text == "Vueling-AE12"){
+        echo "El precio es: ".$precio."<br>";
+        }
+    elseif($text == "Volotea-EA21"){
+        echo "El precio es: ".$Precio."<br>";
+        }
+    elseif($text == "Iberia-WE44"){
+        $res = $precio * 0.065;
+        echo "El precio es: ".$res."<br>";
+        }
+    elseif($text == "Ryanair-EW44"){
+        echo "El precio es: ".$precio."<br>";
+        }
+    elseif($text == "Vueling-ZK87"){
+        $res = $precio * 0.24;
+        echo "El precio es: ".$res."<br>";
+        }
+    elseif($text == "Volotea-UA21"){
+        echo "El precio es: ".$precio."<br>";
+        }
+    elseif($text == "Iberia-WH44"){
+        $res = $precio * 0.877732;
+        echo "El precio es: ".$res."<br>";
+        }
+    elseif($text == "Ryanair-EL00"){
+        $res = $precio * 0.007576;
+        echo "El precio es: ".$res."<br>";
+>>>>>>> bed0d75c55f887fc9ac77a53f029f3f14f1825d2
         }
     }
     echo $res."<br>";
