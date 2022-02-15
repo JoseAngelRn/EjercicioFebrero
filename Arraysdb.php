@@ -130,7 +130,7 @@ $array9 = array(
     array("Vuelo" => "Ryanair-EW44", "Precio" => 50, "Destino" => "Madrid"),
     array("Vuelo" => "Vueling-ZK87", "Precio" => 1000, "Destino" => "Lima"),
     array("Vuelo" => "Volotea-UA21", "Precio" => 70, "Destino" => "Bilbao"),
-    array("Vuelo" => "Iberia-WH44 ", "Precio" => 95, "Destino" => "Roma"),
+    array("Vuelo" => "Iberia-WH44", "Precio" => 95, "Destino" => "Roma"),
     array("Vuelo" => "Ryanair-EL00", "Precio" => 80, "Destino" => "Madrid"),
     array("Vuelo" => "Vueling-AE12", "Precio" => 65, "Destino" => "Roma"),
     array("Vuelo" => "Volotea-EA21", "Precio" => 77, "Destino" => "Roma"),

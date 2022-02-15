@@ -459,53 +459,39 @@ function Ciudad_mas_3($array1){
 }
 
 #CONVERSOR DE DIVISAS-------------------------------------------------------------------------------
-function Divisas($array9){
+function Divisas($array9, $text){
 
-    foreach ($array9 as $array_9) {
+    foreach ($array9 as $array_9){
         $Destino = $array_9["Destino"];
         $Precio = $array_9["Precio"];
 
-    if ($Destino == "Milán") {
-        echo "El precio es:" .$precio."<br>";
+    if ($text == "Vueling-AE12"){
+        echo "El precio es: ".$precio."<br>";
         }
-    elseif($Destino == "Roma"){
-        echo "El precio es:" .$Precio."<br>";
+    elseif($text == "Volotea-EA21"){
+        echo "El precio es: ".$Precio."<br>";
         }
-    elseif($Destino == "Estambul"){
-        $res = $precio * 0,065;
-        echo "El precio es:" .$res."<br>" ;
+    elseif($text == "Iberia-WE44"){
+        $res = $precio * 0.065;
+        echo "El precio es: ".$res."<br>";
         }
-    elseif($Destino == "Madrid"){
-        echo "El precio es:" .$precio."<br>";
+    elseif($text == "Ryanair-EW44"){
+        echo "El precio es: ".$precio."<br>";
         }
-    elseif($Destino == "Lima"){
+    elseif($text == "Vueling-ZK87"){
         $res = $precio * 0.24;
-        echo "El precio es:" .$res."<br>";
+        echo "El precio es: ".$res."<br>";
         }
-    elseif($Destino == "Bilbao"){
-        echo "El precio es:" .$precio."<br>";
+    elseif($text == "Volotea-UA21"){
+        echo "El precio es: ".$precio."<br>";
         }
-    elseif($Destino == "New York"){
-        $res = $precio * 0,877732;
-        echo "El precio es:" .$res."<br>";
+    elseif($text == "Iberia-WH44"){
+        $res = $precio * 0.877732;
+        echo "El precio es: ".$res."<br>";
         }
-    elseif($Destino == "Tokio"){
-        $res = $precio * 0,007576;
-        echo "El precio es:" .$res."<br>";
-        }
-    elseif($Destino == "Chicago"){
-        $res = $precio * 0,877732;
-        echo "El precio es:" .$res."<br>";
-        }
-    elseif($Destino == "Paris"){
-        echo "El precio es:" .$Destino."<br>";
-        }
-    elseif($Destino == "Oporto"){
-        echo "El precio es:" .$Destino."<br>";
-        }
-    elseif($Destino == "Los Ángeles"){
-        $res = $precio * 0,877732;
-        echo "El precio es:" .$res."<br>";
+    elseif($text == "Ryanair-EL00"){
+        $res = $precio * 0.007576;
+        echo "El precio es: ".$res."<br>";
         }
     }
 }

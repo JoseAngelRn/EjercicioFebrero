@@ -12,7 +12,7 @@ $Email = $_POST["Email"];
 $Codigo = $_POST["Codigo"];
 $Importe = $_POST["Importe"];
 $Maleta = $_POST["Maleta"];
-
+$text = $_POST["Mostrar_Vuelos"];
 
 if (filter_var($Email, FILTER_VALIDATE_EMAIL)) {
     echo "EL correo es valido"."</br>";
@@ -20,7 +20,7 @@ if (filter_var($Email, FILTER_VALIDATE_EMAIL)) {
     echo "El correo NO es valido"."</br>";
 }
 
-Divisas($array9);
+Divisas($array9, $text);
 
 
 
