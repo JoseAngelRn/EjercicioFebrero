@@ -3,9 +3,5 @@ Apellidos: tela
 DNI: 78945612
 Email: 45325@gmail.com
 Código: the
-<<<<<<< HEAD
 Importe: 125
-=======
-Importe: 78
->>>>>>> bed0d75c55f887fc9ac77a53f029f3f14f1825d2
 Maleta: Si

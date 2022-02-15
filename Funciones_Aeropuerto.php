@@ -462,7 +462,6 @@ function Ciudad_mas_3($array1){
 function Divisas($array9, $text){
 
     foreach ($array9 as $array_9){
-<<<<<<< HEAD
         $Precio = $array_9["Precio"];
 
     if ($text == "Vueling-AE12"){
@@ -489,7 +488,6 @@ function Divisas($array9, $text){
         }
     elseif($text == "Ryanair-EL00"){
         $res = $Precio * 0.007576;
-=======
         $Destino = $array_9["Destino"];
         $Precio = $array_9["Precio"];
 
@@ -520,10 +518,10 @@ function Divisas($array9, $text){
     elseif($text == "Ryanair-EL00"){
         $res = $precio * 0.007576;
         echo "El precio es: ".$res."<br>";
->>>>>>> bed0d75c55f887fc9ac77a53f029f3f14f1825d2
         }
     }
     echo $res."<br>";
+}
 }
 
 #VALIDAR PRECIO-----------------------------------------------------------------------------
