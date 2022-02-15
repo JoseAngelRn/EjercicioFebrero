@@ -459,62 +459,59 @@ function Ciudad_mas_3($array1){
 }
 
 #CONVERSOR DE DIVISAS-------------------------------------------------------------------------------
-function Divisas($array9){
+function Divisas($array9, $text){
 
-    foreach ($array9 as $array_9) {
-        $Destino = $array_9["Destino"];
+    foreach ($array9 as $array_9){
         $Precio = $array_9["Precio"];
 
-    if ($Destino == "Milán") {
-        echo "El precio es:" .$precio."<br>";
+    if ($text == "Vueling-AE12"){
+        $res = $Precio;
         }
-    elseif($Destino == "Roma"){
-        echo "El precio es:" .$Precio."<br>";
+    elseif($text == "Volotea-EA21"){
+        $res = $Precio;
         }
-    elseif($Destino == "Estambul"){
-        $res = $precio * 0,065;
-        echo "El precio es:" .$res."<br>" ;
+    elseif($text == "Iberia-WE44"){
+        $res = $Precio * 0.065;
         }
-    elseif($Destino == "Madrid"){
-        echo "El precio es:" .$precio."<br>";
+    elseif($text == "Ryanair-EW44"){
+        $res = $Precio;
         }
-    elseif($Destino == "Lima"){
-        $res = $precio * 0.24;
-        echo "El precio es:" .$res."<br>";
+    elseif($text == "Vueling-ZK87"){
+        $res = $Precio * 0.24;
         }
-    elseif($Destino == "Bilbao"){
-        echo "El precio es:" .$precio."<br>";
+    elseif($text == "Volotea-UA21"){
+        $res = $Precio;
         }
-    elseif($Destino == "New York"){
-        $res = $precio * 0,877732;
-        echo "El precio es:" .$res."<br>";
+    elseif($text == "Iberia-WH44"){
+        $res = $Precio * 0.877732;
+    
         }
-    elseif($Destino == "Tokio"){
-        $res = $precio * 0,007576;
-        echo "El precio es:" .$res."<br>";
+    elseif($text == "Ryanair-EL00"){
+        $res = $Precio * 0.007576;
         }
-    elseif($Destino == "Chicago"){
-        $res = $precio * 0,877732;
-        echo "El precio es:" .$res."<br>";
+    }
+    echo $res."<br>";
+}
+
+#VALIDAR PRECIO-----------------------------------------------------------------------------
+function ValidarPrecio($array9, $Importe, $text){
+
+    foreach ($array9 as $array_9){
+        $Precio = $array_9["Precio"];
+        $Vuelo = $array_9["Vuelo"];
+    if ($text == $Vuelo) {
+
+        if ($Precio == $Importe) {
+            echo "La cantidad introducida correcta, compra aceptada"."<br>";
         }
-    elseif($Destino == "Paris"){
-        echo "El precio es:" .$Destino."<br>";
+        elseif ($Precio > $Importe) {
+            echo "La cantidad introducida es incorrecta, introduzca más dinero"."<br>";
         }
-    elseif($Destino == "Oporto"){
-        echo "El precio es:" .$Destino."<br>";
-        }
-    elseif($Destino == "Los Ángeles"){
-        $res = $precio * 0,877732;
-        echo "El precio es:" .$res."<br>";
+        elseif ($Precio < $Importe) {
+            echo "La cantidad introducida es incorrecta, introduzca menos dinero"."<br>";
         }
     }
 }
-
-
-
-
-
-
-
+}
 
 ?>

@@ -124,30 +124,21 @@ $array8 = array(
 );
 
 $array9 = array(
-    array("Vuelo" => "Vueling-AE12", "Precio" => 120, "Destino" => "Milán"),
-    array("Vuelo" => "Volotea-EA21", "Precio" => 90, "Destino" => "Roma"),
-    array("Vuelo" => "Iberia-WE44", "Precio" => 200, "Destino" => "Estambul"),
-    array("Vuelo" => "Ryanair-EW44", "Precio" => 50, "Destino" => "Madrid"),
-    array("Vuelo" => "Vueling-ZK87", "Precio" => 1000, "Destino" => "Lima"),
-    array("Vuelo" => "Volotea-UA21", "Precio" => 70, "Destino" => "Bilbao"),
-    array("Vuelo" => "Iberia-WH44 ", "Precio" => 95, "Destino" => "Roma"),
-    array("Vuelo" => "Ryanair-EL00", "Precio" => 80, "Destino" => "Madrid"),
-    array("Vuelo" => "Vueling-AE12", "Precio" => 65, "Destino" => "Roma"),
-    array("Vuelo" => "Volotea-EA21", "Precio" => 77, "Destino" => "Roma"),
-    array("Vuelo" => "Iberia-WE44", "Precio" => 1200, "Destino" => "New York"),
-    array("Vuelo" => "Ryanair-EW44", "Precio" => 1100, "Destino" => "Tokio"),
-    array("Vuelo" => "Vueling-ZK87", "Precio" => 1500, "Destino" => "Chicago"),
-    array("Vuelo" => "Volotea-UA21", "Precio" => 200, "Destino" => "Paris"),
-    array("Vuelo" => "Iberia-WH44", "Precio" => 45, "Destino" => "Oporto"),
-    array("Vuelo" => "Ryanair-EL00", "Precio" => 1700, "Destino" => "Los Ángeles")
+    array("Vuelo" => "Vueling-AE12-Milán", "Precio" => 120, "Destino" => "Milán"),
+    array("Vuelo" => "Volotea-EA21-Roma", "Precio" => 90, "Destino" => "Roma"),
+    array("Vuelo" => "Iberia-WE44-Estambul", "Precio" => 200, "Destino" => "Estambul"),
+    array("Vuelo" => "Ryanair-EW44-Madrid", "Precio" => 50, "Destino" => "Madrid"),
+    array("Vuelo" => "Vueling-ZK87-Lima", "Precio" => 1000, "Destino" => "Lima"),
+    array("Vuelo" => "Volotea-UA21-Bilbao", "Precio" => 70, "Destino" => "Bilbao"),
+    array("Vuelo" => "Iberia-WH44-Roma", "Precio" => 95, "Destino" => "Roma"),
+    array("Vuelo" => "Ryanair-EL00-Madrid", "Precio" => 80, "Destino" => "Madrid"),
+    array("Vuelo" => "Vueling-AE12-Roma", "Precio" => 65, "Destino" => "Roma"),
+    array("Vuelo" => "Volotea-EA21-Milán", "Precio" => 77, "Destino" => "Milán"),
+    array("Vuelo" => "Iberia-WE44-New York", "Precio" => 1200, "Destino" => "New York"),
+    array("Vuelo" => "Ryanair-EW44-Tokio", "Precio" => 1100, "Destino" => "Tokio"),
+    array("Vuelo" => "Vueling-ZK87-Chicago", "Precio" => 1500, "Destino" => "Chicago"),
+    array("Vuelo" => "Volotea-UA21-Paris", "Precio" => 200, "Destino" => "Paris"),
+    array("Vuelo" => "Iberia-WH44-Oporto", "Precio" => 45, "Destino" => "Oporto"),
+    array("Vuelo" => "Ryanair-EL00-Los Ángeles", "Precio" => 1700, "Destino" => "Los Ángeles")
 );
-
-
-
-
-
-# print_r ($array1);
-# print_r ($array2);
-# print_r ($array3);
-# print_r ($array4);
 ?>
