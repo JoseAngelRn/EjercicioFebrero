@@ -124,7 +124,6 @@ $array8 = array(
 );
 
 $array9 = array(
-<<<<<<< HEAD
     array("Vuelo" => "Vueling-AE12-Milán", "Precio" => 120, "Destino" => "Milán"),
     array("Vuelo" => "Volotea-EA21-Roma", "Precio" => 90, "Destino" => "Roma"),
     array("Vuelo" => "Iberia-WE44-Estambul", "Precio" => 200, "Destino" => "Estambul"),
@@ -141,7 +140,6 @@ $array9 = array(
     array("Vuelo" => "Volotea-UA21-Paris", "Precio" => 200, "Destino" => "Paris"),
     array("Vuelo" => "Iberia-WH44-Oporto", "Precio" => 45, "Destino" => "Oporto"),
     array("Vuelo" => "Ryanair-EL00-Los Ángeles", "Precio" => 1700, "Destino" => "Los Ángeles")
-=======
     array("Vuelo" => "Vueling-AE12", "Precio" => 120, "Destino" => "Milán"),
     array("Vuelo" => "Volotea-EA21", "Precio" => 90, "Destino" => "Roma"),
     array("Vuelo" => "Iberia-WE44", "Precio" => 200, "Destino" => "Estambul"),
@@ -158,6 +156,5 @@ $array9 = array(
     array("Vuelo" => "Volotea-UA21", "Precio" => 200, "Destino" => "Paris"),
     array("Vuelo" => "Iberia-WH44", "Precio" => 45, "Destino" => "Oporto"),
     array("Vuelo" => "Ryanair-EL00", "Precio" => 1700, "Destino" => "Los Ángeles")
->>>>>>> bed0d75c55f887fc9ac77a53f029f3f14f1825d2
 );
 ?>
