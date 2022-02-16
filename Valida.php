@@ -20,7 +20,7 @@ if (filter_var($Email, FILTER_VALIDATE_EMAIL)) {
     echo "El correo NO es valido"."</br>";
 }
 
-ValidarPrecio($array9, $Importe, $text);
+ValidarPrecio($array9, $Importe, $text, $Maleta, $Codigo);
 
 $fichero = fopen("Ticket.txt","w+");
 

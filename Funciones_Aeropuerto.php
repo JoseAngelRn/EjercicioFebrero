@@ -525,16 +525,45 @@ function Ciudad_mas_3($array1){
 }
 */
 #VALIDAR PRECIO Y AÑADIR IVA-----------------------------------------------------------------------------
-function ValidarPrecio($array9, $Importe, $text){
+function ValidarPrecio($array9, $Importe, $text, $Maleta, $Codigo){
 
     foreach ($array9 as $array_9){
         $Precio = $array_9["Precio"];
         $Vuelo = $array_9["Vuelo"];
+
     if ($text == $Vuelo) {
 
         if ($Precio == $Importe) {
-            echo "La cantidad introducida correcta, compra aceptada. El precio es: ".$Importe*1.21." con IVA"."<br>";
-        }
+            echo "La cantidad introducida correcta, compra aceptada.";
+            $NuevoImporte = $Importe * 1.21;
+            echo "El precio es: ".$NuevoImporte." con IVA"."<br>";
+
+            if ($Maleta == "Si") {
+                $ImporteMaleta = $NuevoImporte + 40;
+                echo "Precio con la maleta facturada: ".$ImporteMaleta."<br>";
+
+                if ($Codigo == "CESURHAZTEPRO") {
+                    $ImporteDescuento = $ImporteMaleta / 1.15; 
+                    echo "Código de descuento introducido. El precio es el siguiente: ".$ImporteDescuento."<br>";
+                }
+                else{
+                    echo "No ha introducido ningun código de descuento. El precio es el siguiente: ".$ImporteMaleta."<br>";
+                }
+            }
+
+            elseif ($Maleta == "No") {
+                echo "No hay maleta facturada el precio sigue siendo: ".$NuevoImporte."<br>";
+                
+                if ($Codigo == "CESURHAZTEPRO") {
+                    $ImporteDescuento = $NuevoImporte / 1.15; 
+                    echo "Código de descuento introducido. El precio es el siguiente: ".$ImporteDescuento."<br>";
+                }
+                else{
+                    echo "No ha introducido ningun código de descuento. El precio es el siguiente: ".$NuevoImporte."<br>";
+                }
+            }
+            }
+        
         elseif ($Precio > $Importe) {
             $res= $Precio - $Importe;
             echo "La cantidad introducida es incorrecta, introduzca más dinero: ".$res."<br>";
@@ -547,12 +576,6 @@ function ValidarPrecio($array9, $Importe, $text){
     }
 }
 }
-
-#MALETA
-
-
-#DESCUENTO
-
 
 
 
