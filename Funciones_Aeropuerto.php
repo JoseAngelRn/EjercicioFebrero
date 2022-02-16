@@ -525,10 +525,4 @@ function ValidarPrecio($array9, $Importe, $text, $Maleta, $Codigo, $Divisa){
     }
 }
 
-
-
-
-
-
-
 ?>

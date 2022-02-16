@@ -15,38 +15,43 @@ $Maleta = $_POST["Maleta"];
 $text = $_POST["Mostrar_Vuelos"];
 $Divisa = $_POST["Divisa"];
 
+
+ValidarPrecio($array9, $Importe, $text, $Maleta, $Codigo, $Divisa);
+
 if (filter_var($Email, FILTER_VALIDATE_EMAIL)) {
     echo "EL correo es valido"."</br>";
+    
+    $fichero = fopen("Billete.txt","w+");
+
+    if ($fichero == false) {
+        echo "Error no se ha creado el fichero "."<br>";
+    } else {
+        echo "Se ha creado el fichero correctamente"."<br>";
+        fwrite($fichero,"Nombre: ");
+        fwrite($fichero, $Nombre."\r\n");
+        fwrite($fichero,"Apellidos: ");
+        fwrite($fichero, $Apellidos."\r\n");
+        fwrite($fichero,"DNI: ");
+        fwrite($fichero, $DNI."\r\n");
+        fwrite($fichero,"Email: ");
+        fwrite($fichero, $Email."\r\n");
+        fwrite($fichero,"Código: ");
+        fwrite($fichero, $Codigo."\r\n");
+        fwrite($fichero,"Importe: ");
+        fwrite($fichero, $Importe."\r\n");
+        fwrite($fichero,"Maleta: ");
+        fwrite($fichero, $Maleta."\r\n");
+        fflush($fichero);
+    }
+    
+    echo readfile("Ticket.txt");
+    fclose($fichero);
+
+
 }else{
     echo "El correo NO es valido"."</br>";
 }
 
 
-ValidarPrecio($array9, $Importe, $text, $Maleta, $Codigo, $Divisa);
 
-$fichero = fopen("Ticket.txt","w+");
-
-if ($fichero == false) {
-    echo "Error no se ha creado el fichero "."<br>";
-} else {
-    echo "Se ha creado el fichero correctamente"."<br>";
-    fwrite($fichero,"Nombre: ");
-    fwrite($fichero, $Nombre."\r\n");
-    fwrite($fichero,"Apellidos: ");
-    fwrite($fichero, $Apellidos."\r\n");
-    fwrite($fichero,"DNI: ");
-    fwrite($fichero, $DNI."\r\n");
-    fwrite($fichero,"Email: ");
-    fwrite($fichero, $Email."\r\n");
-    fwrite($fichero,"Código: ");
-    fwrite($fichero, $Codigo."\r\n");
-    fwrite($fichero,"Importe: ");
-    fwrite($fichero, $Importe."\r\n");
-    fwrite($fichero,"Maleta: ");
-    fwrite($fichero, $Maleta."\r\n");
-    fflush($fichero);
-}
-
-echo readfile("Ticket.txt");
-fclose($fichero);
 ?>
