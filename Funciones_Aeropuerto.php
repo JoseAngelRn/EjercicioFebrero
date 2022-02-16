@@ -524,7 +524,7 @@ function Ciudad_mas_3($array1){
 }
 }
 */
-#VALIDAR PRECIO-----------------------------------------------------------------------------
+#VALIDAR PRECIO Y AÑADIR IVA-----------------------------------------------------------------------------
 function ValidarPrecio($array9, $Importe, $text){
 
     foreach ($array9 as $array_9){
@@ -533,7 +533,7 @@ function ValidarPrecio($array9, $Importe, $text){
     if ($text == $Vuelo) {
 
         if ($Precio == $Importe) {
-            echo "La cantidad introducida correcta, compra aceptada"."<br>";
+            echo "La cantidad introducida correcta, compra aceptada. El precio es: ".$Importe*1.21." con IVA"."<br>";
         }
         elseif ($Precio > $Importe) {
             $res= $Precio - $Importe;
@@ -547,5 +547,17 @@ function ValidarPrecio($array9, $Importe, $text){
     }
 }
 }
+
+#MALETA
+
+
+#DESCUENTO
+
+
+
+
+
+
+
 
 ?>
