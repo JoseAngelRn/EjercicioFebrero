@@ -514,10 +514,10 @@ function ValidarPrecio($array9, $Importe, $text, $Maleta, $Codigo, $Divisa){
     elseif ($Divisa == "USD") {
         echo "El precio en USD es: ".$Importe / 0.877732."<br>";
     }
-    elseif ($Divisa == "SolPeruano"){
+    elseif ($Divisa == "Sol Peruano"){
         echo "El precio en Sol Peruano es: ".$Importe / 0.24."<br>";
     }
-    elseif ($Divisa == "LiraTurca"){
+    elseif ($Divisa == "Lira Turca"){
         echo "El precio en Lira Turca es: ".$Importe / 0.065."<br>";
     }
 }
