@@ -459,7 +459,7 @@ function Ciudad_mas_3($array1){
 }
 
 #CONVERSOR DE DIVISAS-------------------------------------------------------------------------------
-function Divisas($array9, $text){
+/*function Divisas($array9, $text){
 
     foreach ($array9 as $array_9){
         $Precio = $array_9["Precio"];
@@ -523,7 +523,7 @@ function Divisas($array9, $text){
     echo $res."<br>";
 }
 }
-
+*/
 #VALIDAR PRECIO-----------------------------------------------------------------------------
 function ValidarPrecio($array9, $Importe, $text){
 
@@ -536,10 +536,13 @@ function ValidarPrecio($array9, $Importe, $text){
             echo "La cantidad introducida correcta, compra aceptada"."<br>";
         }
         elseif ($Precio > $Importe) {
-            echo "La cantidad introducida es incorrecta, introduzca más dinero"."<br>";
+            $res= $Precio - $Importe;
+            echo "La cantidad introducida es incorrecta, introduzca más dinero: ".$res."<br>";
+
         }
         elseif ($Precio < $Importe) {
-            echo "La cantidad introducida es incorrecta, introduzca menos dinero"."<br>";
+            $res = $Importe - $Precio;
+            echo "La cantidad introducida es incorrecta, introduzca menos dinero: ".$res."<br>";
         }
     }
 }

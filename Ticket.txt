@@ -1,7 +1,7 @@
-Nombre: manule
-Apellidos: tela
-DNI: 78945612
+Nombre: 
+Apellidos: 
+DNI: 
 Email: 45325@gmail.com
-Código: the
-Importe: 125
+Código: 
+Importe: 100
 Maleta: Si
