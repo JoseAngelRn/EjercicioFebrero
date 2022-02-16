@@ -15,7 +15,6 @@ $Maleta = $_POST["Maleta"];
 $text = $_POST["Mostrar_Vuelos"];
 $Divisa = $_POST["Divisa"];
 
-
 ValidarPrecio($array9, $Importe, $text, $Maleta, $Codigo, $Divisa);
 
 if (filter_var($Email, FILTER_VALIDATE_EMAIL)) {
@@ -32,7 +31,9 @@ if (filter_var($Email, FILTER_VALIDATE_EMAIL)) {
         fwrite($fichero,"Ciudad de destino: "."<br>");
         fwrite($fichero,"Fecha de salida: "."<br>");
         fwrite($fichero,"Tiempo restante hasta que despegue el avión: "."<br>");
-        fwrite($fichero,"Maleta facturada e identificador: "."<br>");
+        fwrite($fichero,"Maleta facturada e identificador: ");
+        fwrite($fichero,$Maleta);
+        fwrite($fichero,"vffff".RANDOM($Maleta)."<br>");
         fwrite($fichero,": "."<br>");
         fflush($fichero);
     }
