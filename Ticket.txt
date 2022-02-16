@@ -1,6 +1,6 @@
-Nombre: manule
-Apellidos: tela
-DNI: 78945612
+Nombre: 
+Apellidos: 
+DNI: 
 Email: 45325@gmail.com
 Código: CESURHAZTEPRO
 Importe: 120
