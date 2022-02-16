@@ -13,6 +13,7 @@ $Codigo = $_POST["Codigo"];
 $Importe = $_POST["Importe"];
 $Maleta = $_POST["Maleta"];
 $text = $_POST["Mostrar_Vuelos"];
+$Divisa = $_POST["Divisa"];
 
 if (filter_var($Email, FILTER_VALIDATE_EMAIL)) {
     echo "EL correo es valido"."</br>";
@@ -20,7 +21,8 @@ if (filter_var($Email, FILTER_VALIDATE_EMAIL)) {
     echo "El correo NO es valido"."</br>";
 }
 
-ValidarPrecio($array9, $Importe, $text, $Maleta, $Codigo);
+
+ValidarPrecio($array9, $Importe, $text, $Maleta, $Codigo, $Divisa);
 
 $fichero = fopen("Ticket.txt","w+");
 
