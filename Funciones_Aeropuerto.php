@@ -525,4 +525,16 @@ function ValidarPrecio($array9, $Importe, $text, $Maleta, $Codigo, $Divisa){
     }
 }
 
+#FUNCIÓN NÚMERO RAMDOM-------------------------------------------------------------------------------------------------------------------------------------------
+function RANDOM($Maleta){
+
+    if ($Maleta == "Si") {
+        $n1 = rand(0,9); 
+        $n2 = rand(0,9);
+        $n3 = rand(0,9);
+        $n4 = rand(0,9);
+        echo $n1.$n2.$n3.$n4."<br>";
+    }
+}
+
 ?>

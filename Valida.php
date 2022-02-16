@@ -33,6 +33,7 @@ if (filter_var($Email, FILTER_VALIDATE_EMAIL)) {
         fwrite($fichero,"Fecha de salida: "."<br>");
         fwrite($fichero,"Tiempo restante hasta que despegue el avión: "."<br>");
         fwrite($fichero,"Maleta facturada e identificador: "."<br>");
+        fwrite($fichero,": "."<br>");
         fflush($fichero);
     }
     
