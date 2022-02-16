@@ -470,41 +470,41 @@ function ValidarPrecio($array9, $Importe, $text, $Maleta, $Codigo, $Divisa){
         if ($Precio == $Importe) {
             echo "La cantidad introducida correcta, compra aceptada. ";
             $Importe = $Importe * 1.21;
-            echo "El precio es: ".$Importe." con IVA"."<br>";
+            echo "El precio es: ".$Importe." €"." con IVA"."<br>";
 
             if ($Maleta == "Si") {
                 $Importe = $Importe + 40;
-                echo "Precio con la maleta facturada: ".$Importe."<br>";
+                echo "Precio con la maleta facturada: ".$Importe." €"."<br>";
 
                 if ($Codigo == "CESURHAZTEPRO") {
                     $Importe = $Importe / 1.15; 
-                    echo "Código de descuento introducido. El precio es el siguiente: ".$Importe."<br>";
+                    echo "Código de descuento introducido. El precio es el siguiente: ".$Importe." €"."<br>";
                 }
                 else{
-                    echo "No ha introducido ningun código de descuento. El precio es el siguiente: ".$Importe."<br>";
+                    echo "No ha introducido ningun código de descuento. El precio es el siguiente: ".$Importe." €"."<br>";
                 }
             }
 
             elseif ($Maleta == "No") {
-                echo "No hay maleta facturada el precio sigue siendo: ".$Importe."<br>";
+                echo "No hay maleta facturada el precio sigue siendo: ".$Importe." €"."<br>";
                 
                 if ($Codigo == "CESURHAZTEPRO") {
                     $Importe = $Importe / 1.15; 
-                    echo "Código de descuento introducido. El precio es el siguiente: ".$Importe."<br>";
+                    echo "Código de descuento introducido. El precio es el siguiente: ".$Importe." €"."<br>";
                 }
                 else{
-                    echo "No ha introducido ningun código de descuento. El precio es el siguiente: ".$Importe."<br>";
+                    echo "No ha introducido ningun código de descuento. El precio es el siguiente: ".$Importe." €"."<br>";
                 }
             }
             }
         
         elseif ($Precio > $Importe) {
             $res= $Precio - $Importe;
-            echo "La cantidad introducida es incorrecta, introduzca más dinero: ".$res."<br>";
+            echo "La cantidad introducida es incorrecta, introduzca más dinero: ".$res." €"."<br>";
         }
         elseif ($Precio < $Importe) {
             $res = $Importe - $Precio;
-            echo "La cantidad introducida es incorrecta, introduzca menos dinero: ".$res."<br>";
+            echo "La cantidad introducida es incorrecta, introduzca menos dinero: ".$res." €"."<br>";
         }
     }
 }
@@ -512,13 +512,13 @@ function ValidarPrecio($array9, $Importe, $text, $Maleta, $Codigo, $Divisa){
         echo "El precio en Yen es: ".$Importe / 0.007576."<br>";
     }
     elseif ($Divisa == "USD") {
-        echo "El precio en USD es: ".$Importe / 0.877732."<br>";
+        echo "El precio en USD es: ".$Importe / 0.877732." $"."<br>";
     }
     elseif ($Divisa == "Sol Peruano"){
-        echo "El precio en Sol Peruano es: ".$Importe / 0.24."<br>";
+        echo "El precio en Sol Peruano es: ".$Importe / 0.24." S/"."<br>";
     }
     elseif ($Divisa == "Lira Turca"){
-        echo "El precio en Lira Turca es: ".$Importe / 0.065."<br>";
+        echo "El precio en Lira Turca es: ".$Importe / 0.065." ₺"."<br>";
     }
 }
 
