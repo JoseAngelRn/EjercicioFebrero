@@ -520,6 +520,9 @@ function ValidarPrecio($array9, $Importe, $text, $Maleta, $Codigo, $Divisa){
     elseif ($Divisa == "Lira Turca"){
         echo "El precio en Lira Turca es: ".$Importe / 0.065." ₺"."<br>";
     }
+    elseif ($Divisa == "Euros"){
+        echo "El precio en Euros es: ".$Importe." €"."<br>";
+    }
 }
 
 
