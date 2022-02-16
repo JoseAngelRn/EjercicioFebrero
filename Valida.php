@@ -20,31 +20,23 @@ ValidarPrecio($array9, $Importe, $text, $Maleta, $Codigo, $Divisa);
 
 if (filter_var($Email, FILTER_VALIDATE_EMAIL)) {
     echo "EL correo es valido"."</br>";
-    
+
     $fichero = fopen("Billete.txt","w+");
 
     if ($fichero == false) {
         echo "Error no se ha creado el fichero "."<br>";
     } else {
         echo "Se ha creado el fichero correctamente"."<br>";
-        fwrite($fichero,"Nombre: ");
-        fwrite($fichero, $Nombre."\r\n");
-        fwrite($fichero,"Apellidos: ");
-        fwrite($fichero, $Apellidos."\r\n");
-        fwrite($fichero,"DNI: ");
-        fwrite($fichero, $DNI."\r\n");
-        fwrite($fichero,"Email: ");
-        fwrite($fichero, $Email."\r\n");
-        fwrite($fichero,"Código: ");
-        fwrite($fichero, $Codigo."\r\n");
-        fwrite($fichero,"Importe: ");
-        fwrite($fichero, $Importe."\r\n");
-        fwrite($fichero,"Maleta: ");
-        fwrite($fichero, $Maleta."\r\n");
+        fwrite($fichero,"Aeropuerto de origen: Aeropuerto de Sevilla"."<br>");
+        fwrite($fichero,"Ciudad de destino y aeropuerto: "."<br>");
+        fwrite($fichero,"Ciudad de destino: "."<br>");
+        fwrite($fichero,"Fecha de salida: "."<br>");
+        fwrite($fichero,"Tiempo restante hasta que despegue el avión: "."<br>");
+        fwrite($fichero,"Maleta facturada e identificador: "."<br>");
         fflush($fichero);
     }
     
-    echo readfile("Ticket.txt");
+    echo readfile("Billete.txt");
     fclose($fichero);
 
 
