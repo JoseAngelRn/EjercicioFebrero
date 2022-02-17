@@ -1,1 +1,1 @@
-Aeropuerto de origen: Aeropuerto de Sevilla<br>Ciudad de destino y aeropuerto: <br>Ciudad de destino: <br>Fecha de salida: <br>Tiempo restante hasta que despegue el avión: <br>Maleta facturada e identificador: Sivffff<br>: <br>
+Aeropuerto de origen: Aeropuerto de Sevilla<br>Ciudad de destino y aeropuerto: <br>Ciudad de destino: <br>Fecha de salida: <br>Tiempo restante hasta que despegue el avión: <br>Maleta facturada e identificador: Si<br>

@@ -537,4 +537,30 @@ function RANDOM($Maleta){
     }
 }
 
+#FECHA SALIDA VUELO---------------------------------------------------------------------------------------------------
+/*function FechaSalida($array6, $text){
+
+    foreach ($array6 as $array_6){
+    $Horas_despegue = $array_6["Horas_despegue"];
+
+        if ($Horas_despegue == $text) {
+        echo $Horas_despegue;
+        }
+}
+}
+*/
+#FUNCIÓN CIUDAD DE DESTINO-----------------------------------------------------------------------------------------------------
+function NombreCiudadDestino($array9, $text){
+
+        foreach ($array9 as $array_9){
+        $Destino = $array_9["Destino"];
+        $Vuelo = $array_9["Vuelo"];
+
+        if ($Vuelo == $text){
+            echo $Destino."<br>";
+        }
+    }
+}
+
+
 ?>
