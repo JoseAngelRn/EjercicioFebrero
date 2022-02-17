@@ -43,3 +43,12 @@ fieldset {
     margin-right: 20%;
     margin: auto;
   }
+
+  form{
+      float: left;
+      width: 50%;
+  }
+  table{
+      float: right;
+      width: 50%;
+  }
