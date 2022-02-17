@@ -509,19 +509,23 @@ function ValidarPrecio($array9, $Importe, $text, $Maleta, $Codigo, $Divisa){
     }
 }
     if ($Divisa == "Yen"){
-        echo "El precio en Yen es: ".$Importe / 0.007576."<br>";
+        $Importe = $Importe / 0.007576;
+        echo "El precio en Yen es: ".number_format($Importe,2)."<br>";
     }
     elseif ($Divisa == "USD") {
-        echo "El precio en USD es: ".$Importe / 0.877732." $"."<br>";
+        $Importe = $Importe / 0.877732;
+        echo "El precio en USD es: ".number_format($Importe,2)." $"."<br>";
     }
     elseif ($Divisa == "Sol Peruano"){
-        echo "El precio en Sol Peruano es: ".$Importe / 0.24." S/"."<br>";
+        $Importe = $Importe / 0.24;
+        echo "El precio en Sol Peruano es: ".number_format($Importe,2)." S/"."<br>";
     }
     elseif ($Divisa == "Lira Turca"){
-        echo "El precio en Lira Turca es: ".$Importe / 0.065." ₺"."<br>";
+        $Importe = $Importe / 0.065;
+        echo "El precio en Lira Turca es: ".number_format($Importe,2)." ₺"."<br>";
     }
     elseif ($Divisa == "Euros"){
-        echo "El precio en Euros es: ".$Importe." €"."<br>";
+        echo "El precio en Euros es: ".number_format($Importe,2)." €"."<br>";
     }
 }
 
