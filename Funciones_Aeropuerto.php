@@ -562,5 +562,24 @@ function NombreCiudadDestino($array9, $text){
     }
 }
 
+#FUNCIÓN CIUDAD DE DESTINO Y AEROPUERTO-----------------------------------------------------------------------------------------------------
+function NombreCiudadDestinoAeropuertp($array9, $array8, $text){
+
+    foreach ($array9 as $array_9){
+    $Destino = $array_9["Destino"];
+    $Vuelo = $array_9["Vuelo"];
+    
+    foreach ($array8 as $array_8){
+    $Ciudad = $array_8["Ciudad"];
+    $Aeropuerto = $array_8["Aeropuerto"];
+
+        if ($Vuelo == $text){
+            if ($Destino == $Ciudad) {
+                echo $Ciudad." ".$Aeropuerto."<br>";
+            }
+        }
+    }
+}
+}
 
 ?>
