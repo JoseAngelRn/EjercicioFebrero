@@ -91,14 +91,22 @@ $array5 = array(
 );
 
 $array6 = array(
-    array("Vuelo" => "Vueling-AE12", "Horas_despegue" => "15/03/2022 12:00:00"),
-    array("Vuelo" => "Volotea-EA21", "Horas_despegue" => "16/02/2022 16:30:20"),
-    array("Vuelo" => "Iberia-WE44", "Horas_despegue" => "16/02/2022 15:45:00"),
-    array("Vuelo" => "Ryanair-EW44", "Horas_despegue" => "17/02/2022 18:11:40"),
-    array("Vuelo" => "Vueling-ZK87", "Horas_despegue" => "17/02/2022 12:50:00"),
-    array("Vuelo" => "Volotea-UA21", "Horas_despegue" => "18/02/2022 10:45:30"),
-    array("Vuelo" => "Iberia-WH44", "Horas_despegue" => "19/02/2022 11:20:00"),
-    array("Vuelo" => "Ryanair-EL00", "Horas_despegue" => "20/02/2022 13:57:00")
+    array("Vuelo" => "Vueling-AE12-Milán", "Horas_despegue" => "15/03/2022 12:00:00"),
+    array("Vuelo" => "Volotea-EA21-Roma", "Horas_despegue" => "16/02/2022 16:30:20"),
+    array("Vuelo" => "Iberia-WE44-Estambul", "Horas_despegue" => "16/02/2022 15:45:00"),
+    array("Vuelo" => "Ryanair-EW44-Madrid", "Horas_despegue" => "17/02/2022 18:11:40"),
+    array("Vuelo" => "Vueling-ZK87-Lima", "Horas_despegue" => "17/02/2022 12:50:00"),
+    array("Vuelo" => "Volotea-UA21-Bilbao", "Horas_despegue" => "18/02/2022 10:45:30"),
+    array("Vuelo" => "Iberia-WH44-Roma", "Horas_despegue" => "19/02/2022 11:20:00"),
+    array("Vuelo" => "Ryanair-EL00-Madrid", "Horas_despegue" => "20/02/2022 13:57:00"),
+    array("Vuelo" => "Vueling-AE12-Roma", "Horas_despegue" => "15/03/2022 12:00:00"),
+    array("Vuelo" => "Volotea-EA21-Milán", "Horas_despegue" => "16/02/2022 16:30:20"),
+    array("Vuelo" => "Iberia-WE44-New York", "Horas_despegue" => "16/02/2022 15:45:00"),
+    array("Vuelo" => "Ryanair-EW44-Tokio", "Horas_despegue" => "17/02/2022 18:11:40"),
+    array("Vuelo" => "Vueling-ZK87-Chicago", "Horas_despegue" => "17/02/2022 12:50:00"),
+    array("Vuelo" => "Volotea-UA21-Paris", "Horas_despegue" => "18/02/2022 10:45:30"),
+    array("Vuelo" => "Iberia-WH44-Oporto", "Horas_despegue" => "19/02/2022 11:20:00"),
+    array("Vuelo" => "Ryanair-EL00-Los Ángeles", "Horas_despegue" => "20/02/2022 13:57:00")
 );
 
 $array7 = array(

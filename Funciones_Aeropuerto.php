@@ -561,13 +561,13 @@ function NombreCiudadDestino($array9, $text){
         $Vuelo = $array_9["Vuelo"];
 
         if ($Vuelo == $text){
-            echo $Destino."<br>";
+            echo "Ciudad de destino: ".$Destino."<br>";
         }
     }
 }
 
 #FUNCIÓN CIUDAD DE DESTINO Y AEROPUERTO-----------------------------------------------------------------------------------------------------
-function NombreCiudadDestinoAeropuertp($array9, $array8, $text){
+function NombreCiudadDestinoAeropuerto($array9, $array8, $text){
 
     foreach ($array9 as $array_9){
     $Destino = $array_9["Destino"];
@@ -579,11 +579,39 @@ function NombreCiudadDestinoAeropuertp($array9, $array8, $text){
 
         if ($Vuelo == $text){
             if ($Destino == $Ciudad) {
-                echo $Ciudad." ".$Aeropuerto."<br>";
+                echo "Ciudad de destino: ".$Ciudad." y su aeropuerto: ".$Aeropuerto."<br>";
             }
         }
     }
 }
 }
+
+#FECHA DE SALIDA DEL VUELO-------------------------------------------------------------------------------------------------------------
+function SalidaVuelo($array6, $text){
+
+    foreach ($array6 as $array_6){
+        $Vuelo = $array_6["Vuelo"];
+        $Horas_despegue = $array_6["Horas_despegue"];
+        if ($Vuelo == $text){
+        echo "La fecha de salida del avión es: ".$Horas_despegue."<br>";
+    }
+    }
+}
+
+#TIEMPO RESTANTE PARA QUE SALGA EL AVIÓN---------------------------------------------------------------------------
+function TiempoRestante($array6, $text){
+    foreach ($array6 as $array_6){
+        $Vuelo = $array_6["Vuelo"];
+        $Horas_despegue = $array_6["Horas_despegue"];
+        if ($Vuelo == $text){
+        echo "La fecha de salida del avión es: ".$Horas_despegue."<br>";
+
+    }
+    }
+}
+
+
+
+
 
 ?>
