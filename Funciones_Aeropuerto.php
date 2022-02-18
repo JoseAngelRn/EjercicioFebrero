@@ -604,8 +604,9 @@ function TiempoRestante($array6, $text){
         $Vuelo = $array_6["Vuelo"];
         $Horas_despegue = $array_6["Horas_despegue"];
         if ($Vuelo == $text){
-        echo "La fecha de salida del avión es: ".$Horas_despegue."<br>";
-
+        $Hora_Compra = mktime ("12","00","00","02","15","2022" )
+        $Horas_diff = $Hora_Compra - $Horas_despegue;
+            echo "Diferencias de horas: ".$Horas_diff."<br>";
     }
     }
 }

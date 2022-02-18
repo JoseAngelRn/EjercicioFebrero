@@ -19,7 +19,7 @@ $Divisa = $_POST["Divisa"];
 NombreCiudadDestinoAeropuerto($array9, $array8, $text);
 NombreCiudadDestino($array9, $text);
 SalidaVuelo($array6, $text);
-
+TiempoRestante($array6, $text);
 $Maleta;
 RANDOM($Maleta);
 
