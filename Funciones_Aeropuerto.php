@@ -622,19 +622,19 @@ function AvionNombre($array7, $text){
         $Nombre_Avion = $array_7["Nombre_Avion"];
 
         if ($Nombre_Avion == $text) {
-        return "Nombre de avión: ". $Vuelo;
+        return "Nombre del avión: ". $Vuelo;
         }
     }
 }
 
 #NOMBRE FABRICANTE
-function AvionNombre($array7, $text){
+function FabricanteNombre($array7, $text){
     foreach ($array7 as $array_7){
-        $Vuelo = $array_7["Vuelo"];
+        $Fabricante = $array_7["Fabricante"];
         $Nombre_Avion = $array_7["Nombre_Avion"];
 
         if ($Nombre_Avion == $text) {
-        return "Nombre de avión: ". $Vuelo;
+        return "Nombre del fabricante: ". $Fabricante;
         }
     }
 }

@@ -35,7 +35,7 @@ if (filter_var($Email, FILTER_VALIDATE_EMAIL)) {
         fwrite($fichero,ValidarPrecio($array9, $Importe, $text, $Maleta, $Codigo, $Divisa)."\r\n");
         fwrite($fichero,Descuento($Codigo)."\r\n");
         fwrite($fichero,AvionNombre($array7, $text)."\r\n");
-        fwrite($fichero,."\r\n");
+        fwrite($fichero,FabricanteNombre($array7, $text)."\r\n");
         fflush($fichero);
     }
     

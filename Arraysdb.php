@@ -111,7 +111,7 @@ $array6 = array(
 
 $array7 = array(
     array("Vuelo" => "Vueling-AE12", "Nombre_Avion" => "Vueling-AE12-Milán" , "Fabricante" => "Boeing"),
-    array("Vuelo" => "Volotea-EA21", "Nombre_Avion" => "Volotea-EA21-Roma" , "Nombre_Avion" => "" , "Fabricante" => "Airbus"),
+    array("Vuelo" => "Volotea-EA21", "Nombre_Avion" => "Volotea-EA21-Roma" , "Fabricante" => "Airbus"),
     array("Vuelo" => "Iberia-WE44", "Nombre_Avion" => "Iberia-WE44-Estambul" , "Fabricante" => "Airbus"),
     array("Vuelo" => "Ryanair-EW44", "Nombre_Avion" => "Ryanair-EW44-Madrid" , "Fabricante" => "Boeing"),
     array("Vuelo" => "Vueling-ZK87", "Nombre_Avion" => "Vueling-ZK87-Lima" , "Fabricante" => "Airbus"),
