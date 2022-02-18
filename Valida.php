@@ -18,7 +18,8 @@ $Divisa = $_POST["Divisa"];
 
 if (filter_var($Email, FILTER_VALIDATE_EMAIL)) {
     echo "EL correo es valido"."</br>";
-
+    #Con lo de abajo nos crearía el billete con la fecha y ahora, pero da un error ya que no puede cerrar el fichero porque los segundos pasan y detecta que cambia de nombre
+    #$fichero = fopen("Billete".date("d-m-y H:i:s").".txt","w+");
     $fichero = fopen("Billete.txt","w+");
 
     if ($fichero == false) {
