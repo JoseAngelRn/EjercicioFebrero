@@ -1,0 +1,10 @@
+Aeropuerto de origen: Aeropuerto de Sevilla
+Ciudad de destino y aeropuerto: Chicago / Aeropuerto Internacional O'Hare
+Ciudad de destino: Chicago
+La fecha de salida del avión es: 17/02/22 - 12:50:00
+Tiempo restante para que despegue el avión: 48.833333333333 Horas
+Maleta e identificador: Si 0626
+El precio total en USD es: 1,837.74 $
+Ha usado el codigo de descuento: Sí
+Nombre del avión: Vueling-RY23
+Nombre del fabricante: Airbus

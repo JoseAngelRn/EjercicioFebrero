@@ -470,30 +470,30 @@ function ValidarPrecio($array9, $Importe, $text, $Maleta, $Codigo, $Divisa){
         if ($Precio == $Importe) {
             echo "La cantidad introducida correcta, compra aceptada. ";
             $Importe = $Importe * 1.21;
-            echo "El precio es: ".$Importe." €"." con IVA"."<br>";
+            $Importe;
 
             if ($Maleta == "Si") {
                 $Importe = $Importe + 40;
-                echo "Precio con la maleta facturada: ".$Importe." €"."<br>";
+                $Importe;
 
                 if ($Codigo == "CESURHAZTEPRO") {
                     $Importe = $Importe / 1.15; 
-                    echo "El precio final es: ".$Importe." €";
+                    $Importe;
                 }
                 else{
-                    echo "El precio final es: ".$Importe." €";
+                    $Importe;
                 }
             }
 
             elseif ($Maleta == "No") {
-                echo "No hay maleta facturada el precio sigue siendo: ".$Importe." €"."<br>";
+                echo $Importe;
                 
                 if ($Codigo == "CESURHAZTEPRO") {
                     $Importe = $Importe / 1.15; 
-                    echo "El precio final es: ".$Importe." €";
+                    $Importe;
                 }
                 else{
-                    echo "El precio final es: ".$Importe." €";
+                    $Importe;
                 }
             }
             }
