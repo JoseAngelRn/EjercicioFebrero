@@ -1,6 +1,9 @@
-
-
-
-
-
-Si
+Aeropuerto de origen: Aeropuerto de Sevilla
+Ciudad de destino y aeropuerto: Milán / Aeropuerto Milán-Malpensa
+Ciudad de destino: Milán
+La fecha de salida del avión es: 15/03/22 - 12:00:00
+Tiempo restante para que despegue el avión: 672 Horas
+Malete e identificador: Si 2597
+El precio en Lira Turca es: 2,849.23 ₺
+No ha usado el codigo de descuento
+Nombre de avión:Vueling-AE12

@@ -1,7 +1,0 @@
-Nombre: 
-Apellidos: 
-DNI: 
-Email: 45325@gmail.com
-Código: CESURHAZTEPRO
-Importe: 120
-Maleta: Si

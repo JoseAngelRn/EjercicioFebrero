@@ -15,6 +15,7 @@ $Maleta = $_POST["Maleta"];
 $text = $_POST["Mostrar_Vuelos"];
 $Divisa = $_POST["Divisa"];
 
+AvionNombre ($array7, $text);
 
 if (filter_var($Email, FILTER_VALIDATE_EMAIL)) {
     echo "EL correo es valido"."</br>";
@@ -30,13 +31,16 @@ if (filter_var($Email, FILTER_VALIDATE_EMAIL)) {
         fwrite($fichero,NombreCiudadDestino($array9, $text)."\r\n");
         fwrite($fichero,SalidaVuelo($array6, $text)."\r\n");
         fwrite($fichero,TiempoRestante($array6, $text)."\r\n");
-        fwrite($fichero,$Maleta.RANDOM($Maleta)."\r\n");
+        fwrite($fichero,RANDOM($Maleta)."\r\n");
+        fwrite($fichero,ValidarPrecio($array9, $Importe, $text, $Maleta, $Codigo, $Divisa)."\r\n");
+        fwrite($fichero,Descuento($Codigo)."\r\n");
+        fwrite($fichero,AvionNombre($array7, $text)."\r\n");
+        fwrite($fichero,."\r\n");
         fflush($fichero);
     }
     
-    echo readfile("Billete.txt");
     fclose($fichero);
-
+    
 
 }else{
     echo "El correo NO es valido"."</br>";

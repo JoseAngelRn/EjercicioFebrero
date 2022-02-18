@@ -110,10 +110,22 @@ $array6 = array(
 );
 
 $array7 = array(
-    array("Divisa" => "Yen", "C_Divisa" => 0,007576),
-    array("Divisa" => "USD", "C_Divisa" => 0,877732),
-    array("Divisa" => "Sol Peruano", "C_Divisa" => 0,24),
-    array("Divisa" => "Lira Turca", "C_Divisa" => 0,065)
+    array("Vuelo" => "Vueling-AE12", "Nombre_Avion" => "Vueling-AE12-Milán" , "Fabricante" => "Boeing"),
+    array("Vuelo" => "Volotea-EA21", "Nombre_Avion" => "Volotea-EA21-Roma" , "Nombre_Avion" => "" , "Fabricante" => "Airbus"),
+    array("Vuelo" => "Iberia-WE44", "Nombre_Avion" => "Iberia-WE44-Estambul" , "Fabricante" => "Airbus"),
+    array("Vuelo" => "Ryanair-EW44", "Nombre_Avion" => "Ryanair-EW44-Madrid" , "Fabricante" => "Boeing"),
+    array("Vuelo" => "Vueling-ZK87", "Nombre_Avion" => "Vueling-ZK87-Lima" , "Fabricante" => "Airbus"),
+    array("Vuelo" => "Volotea-UA21", "Nombre_Avion" => "Volotea-UA21-Bilbao" , "Fabricante" => "Boeing"),
+    array("Vuelo" => "Iberia-WH44", "Nombre_Avion" => "Iberia-WH44-Roma" , "Fabricante" => "Boeing"),
+    array("Vuelo" => "Ryanair-EL00", "Nombre_Avion" => "Ryanair-EL00-Madrid" , "Fabricante" => "Airbus"),
+    array("Vuelo" => "Vueling-WE45", "Nombre_Avion" => "Vueling-AE12-Roma" , "Fabricante" => "Boeing"),
+    array("Vuelo" => "Volotea-IJ30", "Nombre_Avion" => "Volotea-EA21-Milán" , "Fabricante" => "Lockheed Martin"),
+    array("Vuelo" => "Iberia-QW00", "Nombre_Avion" => "Iberia-WE44-New York" , "Fabricante" => "Airbus"),
+    array("Vuelo" => "Ryanair-LK11", "Nombre_Avion" => "Ryanair-EW44-Tokio" , "Fabricante" => "Lockheed Martin"),
+    array("Vuelo" => "Vueling-RY23", "Nombre_Avion" => "Vueling-ZK87-Chicago" , "Fabricante" => "Airbus"),
+    array("Vuelo" => "Volotea-HG77", "Nombre_Avion" => "Volotea-UA21-Paris" , "Fabricante" => "Lockheed Martin"),
+    array("Vuelo" => "Iberia-PL81", "Nombre_Avion" => "Iberia-WH44-Oporto" , "Fabricante" => "Airbus"),
+    array("Vuelo" => "Ryanair-FV19", "Nombre_Avion" => "Ryanair-EL00-Los Ángeles" , "Fabricante" => "Airbus")
 );
 
 $array8 = array(
@@ -149,4 +161,5 @@ $array9 = array(
     array("Vuelo" => "Iberia-WH44-Oporto", "Precio" => 45, "Destino" => "Oporto"),
     array("Vuelo" => "Ryanair-EL00-Los Ángeles", "Precio" => 1700, "Destino" => "Los Ángeles")
 );
+
 ?>

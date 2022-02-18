@@ -478,10 +478,10 @@ function ValidarPrecio($array9, $Importe, $text, $Maleta, $Codigo, $Divisa){
 
                 if ($Codigo == "CESURHAZTEPRO") {
                     $Importe = $Importe / 1.15; 
-                    echo "Código de descuento introducido. El precio es el siguiente: ".$Importe." €"."<br>";
+                    echo "El precio final es: ".$Importe." €";
                 }
                 else{
-                    echo "No ha introducido ningun código de descuento. El precio es el siguiente: ".$Importe." €"."<br>";
+                    echo "El precio final es: ".$Importe." €";
                 }
             }
 
@@ -490,10 +490,10 @@ function ValidarPrecio($array9, $Importe, $text, $Maleta, $Codigo, $Divisa){
                 
                 if ($Codigo == "CESURHAZTEPRO") {
                     $Importe = $Importe / 1.15; 
-                    echo "Código de descuento introducido. El precio es el siguiente: ".$Importe." €"."<br>";
+                    echo "El precio final es: ".$Importe." €";
                 }
                 else{
-                    echo "No ha introducido ningun código de descuento. El precio es el siguiente: ".$Importe." €"."<br>";
+                    echo "El precio final es: ".$Importe." €";
                 }
             }
             }
@@ -510,22 +510,22 @@ function ValidarPrecio($array9, $Importe, $text, $Maleta, $Codigo, $Divisa){
 }
     if ($Divisa == "Yen"){
         $Importe = $Importe / 0.007576;
-        echo "El precio en Yen es: ".number_format($Importe,2)."<br>";
+        return "El precio en Yen es: ".number_format($Importe,2)."	¥";
     }
     elseif ($Divisa == "USD") {
         $Importe = $Importe / 0.877732;
-        echo "El precio en USD es: ".number_format($Importe,2)." $"."<br>";
+        return "El precio en USD es: ".number_format($Importe,2)." $";
     }
     elseif ($Divisa == "Sol Peruano"){
         $Importe = $Importe / 0.24;
-        echo "El precio en Sol Peruano es: ".number_format($Importe,2)." S/"."<br>";
+        return "El precio en Sol Peruano es: ".number_format($Importe,2)." S/";
     }
     elseif ($Divisa == "Lira Turca"){
         $Importe = $Importe / 0.065;
-        echo "El precio en Lira Turca es: ".number_format($Importe,2)." ₺"."<br>";
+        return "El precio en Lira Turca es: ".number_format($Importe,2)." ₺";
     }
     elseif ($Divisa == "Euros"){
-        echo "El precio en Euros es: ".number_format($Importe,2)." €"."<br>";
+        return "El precio en Euros es: ".number_format($Importe,2)." €";
     }
 }
 
@@ -537,22 +537,10 @@ function RANDOM($Maleta){
         $n2 = rand(0,9);
         $n3 = rand(0,9);
         $n4 = rand(0,9);
-        echo $n1.$n2.$n3.$n4."<br>";
+        return "Malete e identificador: ".$Maleta." ".$n1.$n2.$n3.$n4;
     }
 }
 
-#FECHA SALIDA VUELO---------------------------------------------------------------------------------------------------
-/*function FechaSalida($array6, $text){
-
-    foreach ($array6 as $array_6){
-    $Horas_despegue = $array_6["Horas_despegue"];
-
-        if ($Horas_despegue == $text) {
-        echo $Horas_despegue;
-        }
-}
-}
-*/
 #FUNCIÓN CIUDAD DE DESTINO-----------------------------------------------------------------------------------------------------
 function NombreCiudadDestino($array9, $text){
 
@@ -561,7 +549,7 @@ function NombreCiudadDestino($array9, $text){
         $Vuelo = $array_9["Vuelo"];
 
         if ($Vuelo == $text){
-            echo "Ciudad de destino: ".$Destino."<br>";
+            return "Ciudad de destino: ".$Destino;
         }
     }
 }
@@ -579,7 +567,7 @@ function NombreCiudadDestinoAeropuerto($array9, $array8, $text){
 
         if ($Vuelo == $text){
             if ($Destino == $Ciudad) {
-                echo "Ciudad de destino y aeropuerto: ".$Ciudad." / ".$Aeropuerto."<br>";
+                return "Ciudad de destino y aeropuerto: ".$Ciudad." / ".$Aeropuerto;
             }
         }
     }
@@ -594,7 +582,7 @@ function SalidaVuelo($array6, $text){
         $Horas_despegue = $array_6["Horas_despegue"];
         if ($Vuelo == $text){
             $Horas_despegue = date("d/m/y - h:i:s",$Horas_despegue);
-            echo "La fecha de salida del avión es: ".$Horas_despegue."<br>";
+            return "La fecha de salida del avión es: ".$Horas_despegue;
     }
     }
 }
@@ -608,16 +596,48 @@ function TiempoRestante($array6, $text){
         $Hora_Compra = mktime ("12","00","00","02","15","2022");
         $Horas_diff = $Horas_despegue - $Hora_Compra;
         $Horas_diff = $Horas_diff/3600;
-            echo "Tiempo restante para que despegue el avión: ".$Horas_diff." Horas"."<br>";
+            return "Tiempo restante para que despegue el avión: ".$Horas_diff." Horas";
     }
     }
 }
-
-
+#AEROPUERTO ORIGEN---------------------------------------------------------------------------------------------------------
 function Origen(){
-    echo "Aeropuerto de origen: Aeropuerto de Sevilla"."<br>";
+    return "Aeropuerto de origen: Aeropuerto de Sevilla";
 }
 
+#¿FUNCION SI HA USUADO CODIGO DESCUENTO?----------------------------------------------------------------------------------------
+function  Descuento($Codigo){
+    if ($Codigo == "CESURHAZTEPRO") {
+        return "Ha usado el codigo de descuento";
+    }
+    else {
+        return "No ha usado el codigo de descuento";    
+    }
+}
+
+#NOMBRE AVION
+function AvionNombre($array7, $text){
+    foreach ($array7 as $array_7){
+        $Vuelo = $array_7["Vuelo"];
+        $Nombre_Avion = $array_7["Nombre_Avion"];
+
+        if ($Nombre_Avion == $text) {
+        return "Nombre de avión: ". $Vuelo;
+        }
+    }
+}
+
+#NOMBRE FABRICANTE
+function AvionNombre($array7, $text){
+    foreach ($array7 as $array_7){
+        $Vuelo = $array_7["Vuelo"];
+        $Nombre_Avion = $array_7["Nombre_Avion"];
+
+        if ($Nombre_Avion == $text) {
+        return "Nombre de avión: ". $Vuelo;
+        }
+    }
+}
 
 
 
