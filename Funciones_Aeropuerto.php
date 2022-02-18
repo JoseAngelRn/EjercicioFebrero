@@ -510,22 +510,22 @@ function ValidarPrecio($array9, $Importe, $text, $Maleta, $Codigo, $Divisa){
 }
     if ($Divisa == "Yen"){
         $Importe = $Importe / 0.007576;
-        return "El precio en Yen es: ".number_format($Importe,2)."	¥";
+        return "El precio total en Yen es: ".number_format($Importe,2)."	¥";
     }
     elseif ($Divisa == "USD") {
         $Importe = $Importe / 0.877732;
-        return "El precio en USD es: ".number_format($Importe,2)." $";
+        return "El precio total en USD es: ".number_format($Importe,2)." $";
     }
     elseif ($Divisa == "Sol Peruano"){
         $Importe = $Importe / 0.24;
-        return "El precio en Sol Peruano es: ".number_format($Importe,2)." S/";
+        return "El precio total en Sol Peruano es: ".number_format($Importe,2)." S/";
     }
     elseif ($Divisa == "Lira Turca"){
         $Importe = $Importe / 0.065;
-        return "El precio en Lira Turca es: ".number_format($Importe,2)." ₺";
+        return "El precio total en Lira Turca es: ".number_format($Importe,2)." ₺";
     }
     elseif ($Divisa == "Euros"){
-        return "El precio en Euros es: ".number_format($Importe,2)." €";
+        return "El precio total en Euros es: ".number_format($Importe,2)." €";
     }
 }
 
@@ -537,7 +537,7 @@ function RANDOM($Maleta){
         $n2 = rand(0,9);
         $n3 = rand(0,9);
         $n4 = rand(0,9);
-        return "Malete e identificador: ".$Maleta." ".$n1.$n2.$n3.$n4;
+        return "Maleta e identificador: ".$Maleta." ".$n1.$n2.$n3.$n4;
     }
 }
 
@@ -608,10 +608,10 @@ function Origen(){
 #¿FUNCION SI HA USUADO CODIGO DESCUENTO?----------------------------------------------------------------------------------------
 function  Descuento($Codigo){
     if ($Codigo == "CESURHAZTEPRO") {
-        return "Ha usado el codigo de descuento";
+        return "Ha usado el codigo de descuento: Sí";
     }
     else {
-        return "No ha usado el codigo de descuento";    
+        return "Ha usado el codigo de descuento: No";    
     }
 }
 
@@ -638,7 +638,5 @@ function FabricanteNombre($array7, $text){
         }
     }
 }
-
-
 
 ?>
