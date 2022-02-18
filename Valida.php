@@ -16,20 +16,6 @@ $text = $_POST["Mostrar_Vuelos"];
 $Divisa = $_POST["Divisa"];
 
 
-
-NombreCiudadDestinoAeropuerto($array9, $array8, $text);
-NombreCiudadDestino($array9, $text);
-SalidaVuelo($array6, $text);
-TiempoRestante($array6, $text);
-$Maleta;
-RANDOM($Maleta);
-
-ValidarPrecio($array9, $Importe, $text, $Maleta, $Codigo, $Divisa);
-
-
-
-
-
 if (filter_var($Email, FILTER_VALIDATE_EMAIL)) {
     echo "EL correo es valido"."</br>";
 
@@ -39,8 +25,12 @@ if (filter_var($Email, FILTER_VALIDATE_EMAIL)) {
         echo "Error no se ha creado el fichero "."<br>";
     } else {
         echo "Se ha creado el fichero correctamente"."<br>";
-        fwrite($fichero,"Aeropuerto de origen: Aeropuerto de Sevilla"."<br>");
-
+        fwrite($fichero,Origen()."\r\n");
+        fwrite($fichero,NombreCiudadDestinoAeropuerto($array9, $array8, $text)."\r\n");
+        fwrite($fichero,NombreCiudadDestino($array9, $text)."\r\n");
+        fwrite($fichero,SalidaVuelo($array6, $text)."\r\n");
+        fwrite($fichero,TiempoRestante($array6, $text)."\r\n");
+        fwrite($fichero,$Maleta.RANDOM($Maleta)."\r\n");
         fflush($fichero);
     }
     

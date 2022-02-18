@@ -579,7 +579,7 @@ function NombreCiudadDestinoAeropuerto($array9, $array8, $text){
 
         if ($Vuelo == $text){
             if ($Destino == $Ciudad) {
-                echo "Ciudad de destino: ".$Ciudad." y su aeropuerto: ".$Aeropuerto."<br>";
+                echo "Ciudad de destino y aeropuerto: ".$Ciudad." / ".$Aeropuerto."<br>";
             }
         }
     }
@@ -593,7 +593,8 @@ function SalidaVuelo($array6, $text){
         $Vuelo = $array_6["Vuelo"];
         $Horas_despegue = $array_6["Horas_despegue"];
         if ($Vuelo == $text){
-        echo "La fecha de salida del avión es: ".$Horas_despegue."<br>";
+            $Horas_despegue = date("d/m/y - h:i:s",$Horas_despegue);
+            echo "La fecha de salida del avión es: ".$Horas_despegue."<br>";
     }
     }
 }
@@ -607,11 +608,15 @@ function TiempoRestante($array6, $text){
         $Hora_Compra = mktime ("12","00","00","02","15","2022");
         $Horas_diff = $Horas_despegue - $Hora_Compra;
         $Horas_diff = $Horas_diff/3600;
-            echo "Diferencias de horas: ".$Horas_diff." Horas"."<br>";
+            echo "Tiempo restante para que despegue el avión: ".$Horas_diff." Horas"."<br>";
     }
     }
 }
 
+
+function Origen(){
+    echo "Aeropuerto de origen: Aeropuerto de Sevilla"."<br>";
+}
 
 
 
