@@ -1,0 +1,10 @@
+Aeropuerto de origen: Aeropuerto de Sevilla
+Ciudad de destino y aeropuerto: Estambul / Aeropuerto de Estambul
+Ciudad de destino: Estambul
+La fecha de salida del avión es: 16/02/22 - 03:45:00
+Tiempo restante para que despegue el avión: 27.75 Horas
+Maleta e identificador: Si 5280
+El precio total en Lira Turca es: 3,772.58 ₺
+Ha usado el codigo de descuento: Sí
+Nombre del avión: Iberia-WE44
+Nombre del fabricante: Airbus

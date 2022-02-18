@@ -1,0 +1,10 @@
+Aeropuerto de origen: Aeropuerto de Sevilla
+Ciudad de destino y aeropuerto: Los Ángeles / Aeropuerto Internacional de Los Ángeles
+Ciudad de destino: Los Ángeles
+La fecha de salida del avión es: 20/02/22 - 01:57:00
+Tiempo restante para que despegue el avión: 121.95 Horas
+
+El precio total en USD es: 2,037.86 $
+Ha usado el codigo de descuento: Sí
+Nombre del avión: Ryanair-FV19
+Nombre del fabricante: Airbus

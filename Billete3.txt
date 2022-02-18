@@ -1,0 +1,10 @@
+Aeropuerto de origen: Aeropuerto de Sevilla
+Ciudad de destino y aeropuerto: Lima / Aeropuerto Internacional Jorge Chávez
+Ciudad de destino: Lima
+La fecha de salida del avión es: 17/02/22 - 12:50:00
+Tiempo restante para que despegue el avión: 48.833333333333 Horas
+
+El precio total en Sol Peruano es: 4,384.06 S/
+Ha usado el codigo de descuento: Sí
+Nombre del avión: Vueling-ZK87
+Nombre del fabricante: Airbus

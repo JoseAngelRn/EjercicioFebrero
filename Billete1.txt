@@ -3,8 +3,8 @@ Ciudad de destino y aeropuerto: Milán / Aeropuerto Milán-Malpensa
 Ciudad de destino: Milán
 La fecha de salida del avión es: 15/03/22 - 12:00:00
 Tiempo restante para que despegue el avión: 672 Horas
-Maleta e identificador: Si 1839
-El precio total en Yen es: 21,257.06	¥
+Maleta e identificador: Si 3928
+El precio total en Euros es: 161.04 €
 Ha usado el codigo de descuento: Sí
 Nombre del avión: Vueling-AE12
 Nombre del fabricante: Boeing

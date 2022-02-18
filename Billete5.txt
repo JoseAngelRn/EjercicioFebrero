@@ -1,0 +1,10 @@
+Aeropuerto de origen: Aeropuerto de Sevilla
+Ciudad de destino y aeropuerto: Tokio / Aeropuerto Internacional de Haneda
+Ciudad de destino: Tokio
+La fecha de salida del avión es: 17/02/22 - 06:11:40
+Tiempo restante para que despegue el avión: 54.194444444444 Horas
+
+El precio total en Yen es: 152,770.76	¥
+Ha usado el codigo de descuento: Sí
+Nombre del avión: Ryanair-LK11
+Nombre del fabricante: Lockheed Martin
