@@ -15,6 +15,7 @@ $Maleta = $_POST["Maleta"];
 $text = $_POST["Mostrar_Vuelos"];
 $Divisa = $_POST["Divisa"];
 
+
 if (filter_var($Email, FILTER_VALIDATE_EMAIL)) {
     echo "EL correo es valido"."</br>";
 
@@ -43,7 +44,5 @@ if (filter_var($Email, FILTER_VALIDATE_EMAIL)) {
 }else{
     echo "El correo NO es valido"."</br>";
 }
-
-
 
 ?>
